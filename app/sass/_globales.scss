@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    // font-family: 'Courier New', Courier, monospace;
+    font-family: 'Poppins',Arial,sans-serif;
     padding: 0;
     margin: 0;
     line-height: 1.3;
@@ -63,16 +63,17 @@ body {
 // links
 a, a:visited, a:hover {
     text-decoration: none;
+    color: black;
 }
 
 // visibility
 .hide-for-mobile {
-    @include breakpoint-down(medium) {
+    @include breakpoint-down(small) {
         display: none;
     }
 }
 .hide-for-desktop {
-    @include breakpoint-up(large) {
+    @include breakpoint-up(medium) {
         display: none;
     }
 }
