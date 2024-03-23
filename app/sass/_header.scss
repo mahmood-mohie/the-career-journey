@@ -1,6 +1,21 @@
 .header {
     // background-color: #aaaaaa;
-    // border-bottom: 1px solid black;
+    border-bottom: 1px solid black;
+    &.open {
+        .header__toggle {
+            >span {
+                &:first-child {
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:last-child {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
     nav {
         display: flex;
         padding-top: 10px;
@@ -34,7 +49,7 @@
        grid-area: clicks;
        justify-self: flex-end;
        a {
-        &:not(:last-child) {
+        &:not(:last-child, :nth-child(2)){
             margin-right: 8px
          }
         }
@@ -74,6 +89,8 @@
             height: 5px;
             background-color: black;
             border-radius: 2px;
+            transform-origin: 2px 2px;
+            transition: all 150ms ease-in-out;
             &:not(:last-child) {
                 margin-bottom: 4px;
             }
