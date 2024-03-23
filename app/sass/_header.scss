@@ -3,17 +3,18 @@
     // border-bottom: 1px solid black;
     nav {
         display: flex;
-        padding-top:20px;
-        padding-bottom:20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         justify-content: space-between;
         align-items: center;
-        min-height: 64px;
+        min-height: 44px;
         @include breakpoint-up(medium) {
             display: grid;
             grid-template-areas: 
             "logo clicks"
             "links links"
             ;
+            row-gap: 10px;
         }
         @include breakpoint-up(large) {
             display: grid;
@@ -24,24 +25,27 @@
     }
     &__logo {
         grid-area: logo;
+        display: flex;
+        img {
+            width: 180px;
+        }
     }
     &__clicks {
        grid-area: clicks;
        justify-self: flex-end;
        a {
         &:not(:last-child) {
-            margin-right: 12px;
+            margin-right: 8px
          }
         }
     }
     .button {
-
         font-size: 14px;
         font-weight: 600;
-        padding: 13px 26px;
-        border-radius:25px;
+        padding: 8px 14px;
     }
     .join {
+        padding: 6.5px 14px;
         color: #20B486;
         border: 1.5px solid #20B486;
         &:hover {
@@ -77,15 +81,20 @@
     }
     &__links {
        grid-area: links;
-       justify-self: center;
        margin: 0;
        list-style: none;
-       padding: 10px 0;
+       padding: 0;
 
         li {
             &:not(:last-child) {
-                margin-right: 10px;
+                margin-right: 30px;
             }
         }
+       @include breakpoint-up(medium) {
+        justify-self: flex-start;
+       }
+       @include breakpoint-up(large) {
+        justify-self: center;
+       } 
     }
 }
