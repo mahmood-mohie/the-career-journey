@@ -1,5 +1,4 @@
 .header {
-    // background-color: #aaaaaa;
     // border-bottom: 1px solid black;
     &.open {
         .header__toggle {
@@ -18,8 +17,8 @@
     nav {
         display: flex;
         position: relative;
-        padding-top: 0.625rem;//10px;
-        padding-bottom: 0.625rem;
+        // padding-top: 0.625rem;//10px;
+        // padding-bottom: 0.625rem;
         justify-content: space-between;
         align-items: center;
         min-height: 2.75rem; //44px;
@@ -29,7 +28,8 @@
             "logo clicks"
             "links links"
             ;
-            row-gap: 0.625rem;
+            // row-gap: 0.625rem;
+            padding-top: 0.625rem;
         }
         @include breakpoint-up(large) {
             display: grid;
@@ -106,39 +106,84 @@
        list-style: none;
        padding: 0;
 
-        li {          
+        li {    
+            position: relative;
+            transition: all 150ms ease-in-out;
+            padding-top: 1rem;
+            padding-bottom: 1rem; 
+            cursor: pointer;     
             &:not(:last-child) {
                 margin-right: 2.1875rem; //35px;
             }
-            a {
-                position: relative;
-                transition: all 150ms ease-in-out;
-                color: $secondary;
-                font-weight: 500;
+            
+            &:not(:first-child) {
                 &::before {
                     content: "";
                     position: absolute;
                     display: block;
                     background-color: $textColor1;
-                    height: 5px;
+                    height: 0.25rem;
                     left: 0;
                     right: 0;
-                    bottom:-1.0625rem ;//-17px;
-                    border-radius:0.25rem; // 4px;
+                    bottom: 0;
+                    border-radius: 0.25rem;
                     opacity: 0;
                     transition: all 231ms ease-in-out;
-                    @include breakpoint-down(medium) {
-                        bottom: -0.625rem;
-                    }
                 }
-                &:hover {
+            }
+            a {
+                color: $secondary;
+                font-weight: 500;
+            }
+            &:hover {
+                >a {
                     color :$textColor1;
-                    &::before {
-                        opacity: 1;
+                }
+                &::before {
+                    opacity: 1;
+                }
+                &:first-child {
+                    svg {
+                        transform: rotate(0.5turn);
                     }
+                    .dropdown {
+                        display: flex;
+                    }
+
                 }
             }
         }
+        .special {
+            position: relative;
+            .dropdown {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                border-radius: 2px;
+                left: 0;
+                z-index: 1;
+                margin-top: 1.0625rem;
+                width: 13.125rem;
+                background: rgb(255, 255, 255);
+                box-shadow: rgb(19 15 235 / 10%) 2px 4px 40px;
+                text-align: left;
+                a {
+                    display: block;
+                    width: 100%;
+                    padding: 1rem 1.5625rem;
+                    font-weight: 500;
+                    color: $secondary;
+                    border-left: 0.3125rem solid rgb(255, 255, 255);
+                    &:not(:last-child) {
+                        border-bottom: 0.5px solid rgb(217, 217, 217);
+                    }
+                    &:hover {
+                        border-left: 0.3125rem solid $textColor1;
+                    }
+                }
+                }
+            }
+
        @include breakpoint-up(medium) {
         justify-self: flex-start;
        }
