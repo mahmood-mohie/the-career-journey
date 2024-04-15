@@ -46,17 +46,17 @@
   padding-right: 11.875rem; // 190px
 }
 
-.hero-section > .button {
+.hero-section > .btn {
   grid-column: 1/2;
   grid-row: 3/4;
 }
 
-.button {
+.btn {
   display: flex;
   align-items: center;
 }
 
-.button > a {
+.btn > a {
   padding: 0.938rem 1.313rem; // 15px 21px
   border: none;
   background-color: $primary;
@@ -66,14 +66,14 @@
   transition: all 0.5s;
 }
 
-.button > a:hover {
+.btn > a:hover {
   background-color: $bgCard-hero;
   color: $primary;
   cursor: pointer;
   transform: scale(1.1);
 }
 
-.button .button-2 {
+.btn .btn-2 {
   background-color: $bgCard-hero;
   color: $bgCard-hero-color;
   margin-left: 20px;
