@@ -7,6 +7,9 @@ html {
 }
 *,*::after, *::before {
     box-sizing: inherit;
+    padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -96,12 +99,13 @@ ul {
 button , .button {
     font-size: $fontz-semiSmall;
     font-weight: 600;
-    padding: 0.5rem 0.875rem;
+    // padding: 0.5rem 0.875rem;
+    padding:0.69rem 0.97rem;
     transition: all 150ms ease-in-out;
     border-radius: 25px;
     &-headerXY {
-        width:4.0625rem; // 65px;
-        height:2.1875rem; // 35px;
+        // width:4.0625rem; // 65px;
+        // height:2.1875rem; // 35px;
         @include breakpoint-up(medium) {
             display: inline-block;
         }
