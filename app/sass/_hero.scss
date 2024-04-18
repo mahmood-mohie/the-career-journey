@@ -6,12 +6,26 @@
     grid-template-areas: 
     "info photo"
     "icon icon";
+    margin-top: 3rem;
+
+    @include breakpoint-down(medium) {
+      grid-template-areas:
+        "photo"
+        "info"
+        "icon";
+    }
   }
   &__col-1 {
     grid-area: info;
     display: flex;
     flex-direction: column;
     position: relative;
+    
+    @include breakpoint-down(medium) {
+      text-align: center;
+      margin-top: 24px;
+    }
+
     &::before {
       position: absolute;
       content: "";
@@ -24,6 +38,13 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
+      @include breakpoint-down(small){
+        width: 100%;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+      }
     }
   }
   &__col-2 {
@@ -39,6 +60,14 @@
     font-size: 64px;
     font-weight: 700;
     margin-bottom: 20px;
+
+    @include breakpoint-down(medium) {
+      font-size: 56px;
+    }
+    @include breakpoint-down(small){
+      font-size: 40px;
+    }
+
     span {
       color: $primary;
     }
@@ -50,20 +79,43 @@
     font-weight: 400;
     margin-bottom: 36px;
     line-height: 1.8;
+    @include breakpoint-down(medium) {
+      line-height: 1.4;
+      margin-bottom: 35px;
+    }
   }
   &__btn {
     display: flex;
     align-items: center;
     margin-bottom: 50px;
+
+    @include breakpoint-down(medium) {
+      justify-content: center;
+      margin-bottom: 35px;
+    }
+    @include breakpoint-down(small){
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
     > a {
       padding: 0.938rem 1.313rem; // 15px 21px
       border: none;
       background-color: $primary;
       color: $textColor4;
-      border-radius: 10px;
+      border-radius: 8px;
       transition: all 150ms ease-in-out;
       font-size: 18px;
       font-weight: 600;
+      margin-right: 20px;
+
+      @include breakpoint-down(small){
+        padding: 10px 10px;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 5px;
+      }
+
       &:hover {
         background-color: $bgCard-hero;
         color: $primary;
@@ -72,33 +124,44 @@
     .btn-sub2{
       background-color: $bgCard-hero;
       color: $bgCard-hero-color;
-      margin-left: 20px;
+      
       font-size: 18px;
+
+  
+      @include breakpoint-down(small){
+        font-size: 16px;
+      }
     }
   }
   &__icon {
     display: flex;
     color: $textColor2;
    font-size: $fontz-regular;
-    .icon-one,
-    .icon-two,
-    .icon-three {
-      display: flex;
-      align-items: center;
-      margin-right: 22px;
-      span {
-        padding-right: 4px;
-      }
-    span > img {
-      width: 28px;
-      height: 28px;
-      margin-right: 10px;
-      }
-      .text {
-        font-size: 16px;
-        font-weight: 400;
-      }
+
+   @include breakpoint-down(medium) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+    > div {
+        display: flex;
+        align-items: center;
+        margin: 6px;
+
+        span {
+          padding-right: 4px;
+        }
+        span > img {
+        width: 28px;
+        height: 28px;
+        margin-right: 10px;
+        }
+        .text {
+          font-size: 16px;
+          font-weight: 400;
+        }
+      
     }
+    
   
   }
   &__photo {
@@ -108,6 +171,12 @@
     height: 315px;
     border-radius: 50%;
     position: relative;
+
+    @include breakpoint-down(small){
+      width: 280px;
+      height: 280px;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -118,6 +187,11 @@
       top: -19px;
       left: -19px;
       z-index: -6;
+
+      @include breakpoint-down(small){
+        left: 0px;
+      }
+
     }
     img {
       width: 100%;
@@ -129,43 +203,70 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include breakpoint-down(small){
+      flex-wrap: wrap;
+    }
+
     .icon {
       z-index: 5;
       overflow: hidden;
       padding: 12px;
       position: relative;
       text-align: center;
-      margin-right: 10px;
       background-color: #eafff9;
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 110px;
-      height: 139px;
+      height: 154px;
       border-radius: 10px;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+      @include breakpoint-down(small){
+        width: 80px;
+        height: 128px;
+        padding: 10px;
+      }
+
       > img {
         // width: 100px;
         // /* position: relative; */
         z-index: 4;
+        @include breakpoint-down(small){
+          width: 36px;
+        }
       }
       .circle {
         width: 49px;
+        @include breakpoint-down(small){
+          width: 36px;
+        }
       }
       > p {
         font-size: 25px;
         font-weight: 700;
         padding-top: 5px;
         padding-bottom: 5px;
-        font-size: $fontz-semiMeduim;
         color: $secondary;
         z-index: 4;
+
+        @include breakpoint-down(small){
+          font-size: 18px;
+          font-weight: 600;
+        }
+
       }
       .p1 {
         font-size: 15px;
         font-weight: 400;
         color: $secondary;
         padding: 0;
-        font-size: $fontz-semiSmall;
+        @include breakpoint-down(small){
+          font-size: 12px;
+        }
+
       }
       &::before {
         content: " ";
@@ -174,7 +275,7 @@
         width: 40%;
         height: 140%;
         top: -20px;
-        animation: 4s rotate linear infinite;
+        animation: 4s rotate linear 2 ; //infinite;
       }
       &::after {
         content: " ";
@@ -189,8 +290,19 @@
   &__footer {
     display: flex;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 50px;
     position: relative;
+    flex-wrap: wrap;
+
+    @include breakpoint-down(medium) {
+      margin-top: 45px;
+    }
+
+    @include breakpoint-down(small){
+      margin-top: 40px;
+    }
+
+
     &::before {
       position: absolute;
       content: "";
@@ -203,14 +315,30 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
+
+      @include breakpoint-down(small){
+        width: 100%;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+      }
+
     }
+
     img {
       margin-right: 40px;
+      padding: 10px 0px;
+      @include breakpoint-down(medium) {
+        display: inline-block;
+        height: 45px;
+      }
     }
     .first {
       margin-right: 50px;
       font-size: 25px;
       font-weight: 300;
+
       > span {
         color: $primary;
         font-weight: 700;
@@ -220,6 +348,9 @@
     .last {
       display: flex;
       align-items: center;
+      @include breakpoint-down(medium) {
+        flex-wrap: wrap;
+      }
     }
   }
 }
