@@ -1,0 +1,137 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+*,*::after, *::before {
+    box-sizing: inherit;
+    padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    line-height: 1.3;
+    height: 1000px;
+    background-color: #FFFFFF;
+    &.noscroll {
+        overflow: hidden;
+    }
+}
+// flexbox 
+.flex {
+    display: flex;
+    &-jc-c {
+        justify-content: center;
+    }
+    &-jc-sb {
+        justify-content: space-between;
+    }
+    &-ai-c {
+        align-items: center;
+    }
+}
+// spacing 
+.container {
+    max-width: 78rem;
+    margin: 0 auto;
+    &--pl {
+        padding-left: 1.5rem;
+    }
+    &--pr {
+        padding-right: 1.5rem;
+    }
+    &--px {
+        //changed
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        @include breakpoint-down(small) {
+            padding-left: 1rem;
+            padding-right: 1em
+        }
+
+    }
+    &--pt {
+        padding-top:  5rem;
+    }
+    &--pb {
+        padding-bottom:  5rem;
+    }
+    &--py {
+        padding-top: 5rem;
+        padding-bottom:  5rem;
+    }
+    &--pall {
+        padding-top:  5rem;
+        padding-right: 1.5rem;
+        padding-bottom:  5rem;
+        padding-left: 1.5rem;
+    }
+}
+// links
+a, a:visited, a:hover {
+    text-decoration: none;
+}
+h1,h2,h3 {
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+
+// visibility
+.hide-for-mobile {
+    @include breakpoint-down(small) {
+        display: none;
+    }
+}
+
+// button 
+button , .button {
+    font-size: $fontz-semiSmall;
+    font-weight: 600;
+    // padding: 0.5rem 0.875rem;
+    padding:0.69rem 0.97rem;
+    transition: all 150ms ease-in-out;
+    border-radius: 25px;
+    &-headerXY {
+        // width:4.0625rem; // 65px;
+        // height:2.1875rem; // 35px;
+        @include breakpoint-up(medium) {
+            display: inline-block;
+        }
+    }
+    &-d-ib {
+        display: inline-block
+    }
+    &-join {
+        color: $textColor1;
+        border: 1.5px solid $textColor1;
+        &:hover {
+            background-color: $primary;
+            color: $textColor4;
+        }
+    }
+    &-login {
+        background-color: $primary;
+        color: $textColor4;
+        &:hover {
+            background-color: $bgCards1;
+        }
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoint-up(medium) {
+        display: none;
+    }
+}
