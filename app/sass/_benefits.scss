@@ -3,10 +3,10 @@
     color: white;
     &__content {
         padding-top: 40px;
-        padding-bottom: 60px;
+        padding-bottom: 120px;
         @include breakpoint-up(large){
             padding-top: 100px;
-
+           
         }
 
         h3 {

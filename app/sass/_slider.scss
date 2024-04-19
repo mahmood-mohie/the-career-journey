@@ -8,9 +8,13 @@
             font-size: 34px;
             line-height: 46px;
             color: #101828;
+            @include breakpoint-up(medium){
+                text-align: center;
+                max-width: 70%;
+            }
         }
     }
-    &__container {
+    // &__container {
 
-    }
+    // }
 }
