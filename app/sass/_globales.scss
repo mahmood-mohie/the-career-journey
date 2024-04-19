@@ -30,6 +30,15 @@ body {
 // flexbox 
 .flex {
     display: flex;
+    &-w-w {
+        flex-wrap: wrap;
+    }
+    &-d-c {
+        flex-direction: column;
+    }
+    &-d-r {
+        flex-direction: row;
+    }
     &-jc-c {
         justify-content: center;
     }
