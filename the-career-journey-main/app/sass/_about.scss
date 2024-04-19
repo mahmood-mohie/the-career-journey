@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+
+section {
+  margin: auto {
+    bottom: 10em;
+  }
+  min-width: 3.125em;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px 0px;
+  margin-top: 5em;
+  padding: 0px 20px;
+
+  .about-us {
+    font-size: $fontz-semiLarge;
+    font-weight: 300;
+    letter-spacing: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 12px 5px $primary;
+  }
+
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px 0px;
+
+    .left-side-one {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
+      gap: 30px 0px;
+
+      img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+      }
+
+      h3 {
+        font-size: $fontz-regular;
+        font-weight: 500;
+        text-align: center;
+        > span {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  .left-side-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px 0px;
+
+    img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+    }
+    p {
+      font-size: $fontz-semiSmall;
+      font-weight: 400;
+      text-align: center;
+      padding-right: 20px;
+      line-height: 22px;
+    }
+  }
+
+  a {
+    padding: 15px 0px;
+    width: 300px;
+    text-align: center;
+    border: 2px solid $primary;
+    border-radius: 25px;
+    transition: all 0.3s;
+    color: $secondary;
+    &:hover {
+      background-color: $primary;
+      color: $textColor4;
+      transform: scale(1.03);
+    }
+  }
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px 0px;
+  padding: 0px 20px;
+
+  h3 {
+    font: {
+      size: $fontz-Large;
+      weight: 300;
+    }
+
+    letter-spacing: 5px;
+    text-shadow: 0px 10px 5px $secondary;
+    text-align: center;
+    color: $primary;
+  }
+
+  .center-side {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    .word-side {
+      display: flex;
+      gap: 20px 0px;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        text-align: center;
+        font: {
+          weight: 500;
+          size: fontz-regular;
+        }
+        // padding: 0px 20px;
+      }
+
+      p {
+        text-align: center;
+        font : {
+          weight: 400;
+          size: $fontz-semiSmall;
+        }
+        // padding: 0px 55px;
+        padding-right: 20px;
+        line-height: 25px;
+      }
+
+      a {
+        text-align: center;
+        width: 210px;
+        padding: 15px 0px;
+        border: 2px solid $primary;
+        border-radius: 25px;
+        transition: all 0.3s;
+        color: $secondary;
+        &:hover {
+          background-color: $primary;
+          color: $textColor4;
+          transform: scale(1.02);
+        }
+      }
+    }
+
+    .image {
+      img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.botton {
+  margin-top: 10em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px 0px;
+  padding: 0px 20px;
+  .words {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px 0px;
+    padding: 0px 20px;
+
+    h3 {
+      font : {
+        size: $fontz-Large;
+        weight: 300;
+      }
+      text-shadow: 0px 10px 5px $secondary;
+      letter-spacing: 5px;
+      color: $primary;
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: 500;
+    }
+    p {
+      text-align: start;
+    }
+  }
+
+  .activites {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: $bottom-bg-color;
+      padding: 20px;
+      min-width: 10px;
+      min-height: 20px;
+      border-radius: 20px;
+      > span {
+        font : {
+          size: $fontz-Large;
+          weight: 500;
+        }
+        color: $buttomSpan-color;
+      }
+      p {
+        font-size: $fontz-semiSmall;
+        line-height: 28px;
+        > span {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
