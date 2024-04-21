@@ -15,7 +15,6 @@
     <!-- CSS FILES -->
     <link rel="stylesheet" href="./dist/style.css" />
     <!-- images shortcuts -->
-    
   </head>
   <body>
     <!-- Banner Section -->
@@ -23,39 +22,61 @@
 
     <!-- Start Header Section -->
     <header id="header" class="header">
-
       <nav class="container container--px">
-          <a href="#" class="header__logo">
-              <!-- The Career Journey -->
-              <img src="./images/logo.png" alt="logo">
+        <a href="#" class="header__logo">
+          <!-- The Career Journey -->
+          <img src="./images/logo.png" alt="logo" />
+        </a>
+        <div class="header__clicks flex flex-ai-c">
+          <a href="#" class="header__searchContainer">
+            <input type="text" placeholder="search..." />
+            <div class="search"></div>
           </a>
-          <div class="header__clicks flex flex-ai-c">
-              <a href="#" class="header__searchContainer">
-                  <input type="text" placeholder="search...">
-                  <div class="search"></div>
-              </a>
-              <a href="#" id="hamburderMenu" class="header__toggle hide-for-desktop">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-              </a>
-              <a href="#" class="button button-headerXY  button-join hide-for-mobile">Join</a>
-              <a href="#" class="button button-headerXY  button-login hide-for-mobile">Login</a>
-          </div>
-          <ul class="header__links flex hide-for-mobile">
-              <li class="special">
-                  <a href="#">Home</a>
-                  <svg class="nav-dropdown-linkstyles__ChevronDownIcon-sc-u5ztcb-1 bpNttV" width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M1 1.46191L7 7.00038L13 1.46191" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                  <div class="dropdown">
-                      <a href="#">Courses</a>
-                      <a href="#">Career Path</a>
-                  </div>
-              </li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Community</a></li>
-          </ul>
+          <a
+            href="#"
+            id="hamburderMenu"
+            class="header__toggle hide-for-desktop"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <a href="#" class="button button-headerXY button-join hide-for-mobile"
+            >Join</a
+          >
+          <a
+            href="#"
+            class="button button-headerXY button-login hide-for-mobile"
+            >Login</a
+          >
+        </div>
+        <ul class="header__links flex hide-for-mobile">
+          <li class="special">
+            <a href="#">Home</a>
+            <svg
+              class="nav-dropdown-linkstyles__ChevronDownIcon-sc-u5ztcb-1 bpNttV"
+              width="14"
+              height="8"
+              viewBox="0 0 14 8"
+              fill="none"
+            >
+              <path
+                d="M1 1.46191L7 7.00038L13 1.46191"
+                stroke="black"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+            <div class="dropdown">
+              <a href="#">Courses</a>
+              <a href="#">Career Path</a>
+            </div>
+          </li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
       </nav>
       <div class="header__menu has-fade">
         <a href="#">Home</a>
@@ -68,7 +89,6 @@
           <a href="#" class="mo-btn button button-login">Login</a>
         </div>
       </div>
-
     </header>
     <!-- End Header Section -->
 
@@ -76,7 +96,6 @@
       <!-- Start Hero Section -->
       <section class="hero">
         <div class="hero__content container container--px">
-
           <div class="hero__col-1">
             <div class="hero__text">
               up your <span> skills </span> <br />
@@ -88,7 +107,8 @@
               path
             </div>
             <div class="hero__para">
-              Become top 10% in your field with courses taught by industry experts. Always up-to-date.
+              Become top 10% in your field with courses taught by industry
+              experts. Always up-to-date.
             </div>
             <div class="hero__btn">
               <a href="#">See All Courses</a>
@@ -113,7 +133,7 @@
           <div class="hero__col-2">
             <div class="hero__photo">
               <!-- <div class="bg-hero-img"> -->
-                <img src="./images/Mask group (1).png" alt="img" />
+              <img src="./images/Mask group (1).png" alt="img" />
               <!-- </div> -->
             </div>
             <div class="hero__imgIcons">
@@ -153,58 +173,77 @@
 
       <!-- Start Slider Section -->
       <section class="slider">
-        <div class="slider__content flex flex-d-c flex-ai-c container container--px ">
-          <h3>Our students are getting hired by top companies. We can help you too.</h3>
-          <div class="slider__container">
-          </div>
+        <div
+          class="slider__content flex flex-d-c flex-ai-c container container--px"
+        >
+          <h3>
+            Our students are getting hired by top companies. We can help you
+            too.
+          </h3>
+          <div class="slider__container"></div>
         </div>
-
       </section>
       <!-- End Slider Section -->
 
       <!-- Start Benefit Section -->
-      <Section class="benefit">
-        <div class="benefit__content flex flex-d-c container container--px">     
-            <h3>Benefits of joining TCJ</h3>
-            <p>We help you at every step of your learning and career journey. From beginner to getting hired to advancing your skills and having a successful, rewarding career.</p>
-            <div class="benefit__cards">
-
-              <div class="card flex">
-                <img src="./images/Portfolio.webp" alt="Portfolio icon">
-                <div class="content">
-                  <h4>Build a portfolio of projects that make you stand out</h4>
-                  <p>The projects we help you build are professional, real-world apps that will make your portfolio stand out and impress potential employers.</p>
-                </div>
+      <section class="benefit">
+        <div class="benefit__content flex flex-d-c container container--px">
+          <h3>Benefits of joining TCJ</h3>
+          <p>
+            We help you at every step of your learning and career journey. From
+            beginner to getting hired to advancing your skills and having a
+            successful, rewarding career.
+          </p>
+          <div class="benefit__cards">
+            <div class="card flex">
+              <img src="./images/Portfolio.webp" alt="Portfolio icon" />
+              <div class="content">
+                <h4>Build a portfolio of projects that make you stand out</h4>
+                <p>
+                  The projects we help you build are professional, real-world
+                  apps that will make your portfolio stand out and impress
+                  potential employers.
+                </p>
               </div>
-
-              <div class="card flex">
-                <img src="./images/Career_Path.webp" alt="Career_Path icon">
-                <div class="content">
-                  <h4>Get hired, in record time</h4>
-                  <p>Stop wasting time on endless tutorials. Our step-by-step Career Paths give you an exact roadmap to go from any background to getting hired. No CS degree required.</p>
-                </div>
-              </div>
-
-              <div class="card flex">
-                <img src="./images/Promotion.webp" alt="Career_Path icon">
-                <div class="content">
-                  <h4>Get promoted, become top 10%</h4>
-                  <p>Our intermediate and advanced courses help you continue to build your skills so that you can land senior roles and be recognized as a top tech professional.</p>
-                </div>
-              </div>
-
-              <div class="card flex">
-                <img src="./images/WorkAnywhere.webp" alt="Career_Path icon">
-                <div class="content">
-                  <h4>Gain the freedom to work anytime, anywhere
-                  </h4>
-                  <p>We can give you a curated roadmap to build your dream career and become your own boss, no matter your experience level.</p>
-                </div>
-              </div>
-
             </div>
+
+            <div class="card flex">
+              <img src="./images/Career_Path.webp" alt="Career_Path icon" />
+              <div class="content">
+                <h4>Get hired, in record time</h4>
+                <p>
+                  Stop wasting time on endless tutorials. Our step-by-step
+                  Career Paths give you an exact roadmap to go from any
+                  background to getting hired. No CS degree required.
+                </p>
+              </div>
+            </div>
+
+            <div class="card flex">
+              <img src="./images/Promotion.webp" alt="Career_Path icon" />
+              <div class="content">
+                <h4>Get promoted, become top 10%</h4>
+                <p>
+                  Our intermediate and advanced courses help you continue to
+                  build your skills so that you can land senior roles and be
+                  recognized as a top tech professional.
+                </p>
+              </div>
+            </div>
+
+            <div class="card flex">
+              <img src="./images/WorkAnywhere.webp" alt="Career_Path icon" />
+              <div class="content">
+                <h4>Gain the freedom to work anytime, anywhere</h4>
+                <p>
+                  We can give you a curated roadmap to build your dream career
+                  and become your own boss, no matter your experience level.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </Section>
+      </section>
       <!-- End Benefit Section -->
 
       <!-- Start Offer Section -->
@@ -213,37 +252,43 @@
           <div class="offer__moveUp move">
             <div class="offer__box-1 flex flex-d-c">
               <h3>
-                We can help you build your dream career, <span>even if ...</span>
+                We can help you build your dream career,
+                <span>even if ...</span>
               </h3>
               <div class="listWrapper">
                 <ul>
                   <li>
-                    You're <strong>completely new</strong> to tech and have never worked with A.I. or written a line of code before!
+                    You're <strong>completely new</strong> to tech and have
+                    never worked with A.I. or written a line of code before!
                   </li>
                   <li>
-                    You've <strong>struggled</strong> with coding or A.I. tools in the past.
+                    You've <strong>struggled</strong> with coding or A.I. tools
+                    in the past.
                   </li>
                   <li>
-                    You've wondered "am I <strong>too old</strong> to start something new?"
+                    You've wondered "am I <strong>too old</strong> to start
+                    something new?"
                   </li>
                   <li>
-                    You're completely <strong>overwhelmed</strong> and have no idea where to start.
+                    You're completely <strong>overwhelmed</strong> and have no
+                    idea where to start.
                   </li>
                 </ul>
               </div>
             </div>
             <div class="offer__box-2 flex flex-d-c">
-              <h3>
-                Sound like you?
-              </h3>
-              <div>If so, take our Tech Career Path Quiz now to get a <b>personalized, step-by-step roadmap</b> to achieving your dream career</div>
+              <h3>Sound like you?</h3>
+              <div>
+                If so, take our Tech Career Path Quiz now to get a
+                <b>personalized, step-by-step roadmap</b> to achieving your
+                dream career
+              </div>
               <a class="customBtn" href="#">Get My Career Path</a>
             </div>
           </div>
         </div>
       </section>
       <!-- End Offer Section -->
-
     </main>
 
     <footer class="footer"></footer>
