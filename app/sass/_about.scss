@@ -1,0 +1,356 @@
+main {
+  margin: 0px 160px;
+  @include breakpoint-down(medium) {
+    margin: 0px auto;
+  }
+  .first-div {
+    padding-top: 80px;
+    margin-bottom: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    @include breakpoint-down(medium) {
+      flex-wrap: wrap;
+    }
+
+    .word-side {
+      @include breakpoint-down(medium) {
+        justify-content: center;
+        padding: 40px 20px;
+        align-items: center;
+      }
+
+      @include breakpoint-down(small) {
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 40px 0px;
+      }
+
+      padding-right: 125px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px 0px;
+
+      h1 {
+        font-size: $fontz-xxlarge;
+        color: $primary;
+        @include breakpoint-down(small) {
+          text-align: start;
+          padding-left: 20px;
+          font-size: $fontz-xLarge;
+        }
+      }
+
+      h3 {
+        @include breakpoint-down(medium) {
+          text-align: center;
+          font-size: $fontz-meduim;
+        }
+
+        @include breakpoint-down(small) {
+          text-align: start;
+          padding-left: 20px;
+        }
+        font-size: $fontz-semiBold;
+        span {
+          color: $aboutUs-span-color;
+        }
+      }
+
+      p {
+        @include breakpoint-down(medium) {
+          padding: 0px 30px;
+          line-height: 40px;
+        }
+        line-height: 28px;
+      }
+      a {
+        text-align: center;
+        width: 129px;
+        padding: 15px 0px;
+        border-radius: 30px;
+        background-color: $primary;
+        color: $textColor4;
+        transition: all 0.3s;
+        &:hover {
+          box-shadow: 0px 0px 10px inset $secondary;
+          transform: scale(1.03);
+        }
+      }
+    }
+
+    .image-side {
+      padding-left: 125px;
+      position: relative;
+      @include breakpoint-down(medium) {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+      }
+
+      img {
+        width: 360px;
+        height: 248px;
+        position: relative;
+        @include breakpoint-down(medium) {
+          top: 50px;
+          width: 500px;
+          padding: 0px 20px;
+        }
+        @include breakpoint-down(small) {
+          width: 350px;
+        }
+
+        &[alt="img-2"] {
+          transform: translate(-160px, 10px);
+          @include breakpoint-down(medium) {
+            left: 160px;
+          }
+        }
+      }
+
+      &::before {
+        @include breakpoint-down(medium) {
+          width: 600px;
+          height: 560px;
+          left: -50px;
+        }
+
+        @include breakpoint-down(small) {
+          width: 350px;
+          height: 550px;
+          position: absolute;
+          left: 0px;
+        }
+
+        content: " ";
+        position: absolute;
+        width: 474px;
+        height: 474px;
+        top: 20px;
+        right: 20px;
+        border-radius: 20px;
+        background-color: $bgImage-cont;
+      }
+    }
+  }
+
+  .center {
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+
+    .images-div {
+      // flex: 1 1 auto;
+      position: relative;
+      img {
+        position: relative;
+        width: 434px;
+        height: 471px;
+        top: 35px;
+        left: 20px;
+        @include breakpoint-down(medium) {
+          width: 480px;
+          left: 0px;
+          top: 40px;
+        }
+        @include breakpoint-down(small) {
+          width: 350px;
+        }
+      }
+
+      &::before {
+        @include breakpoint-down(medium) {
+          width: 620px;
+          height: 474px;
+          left: -75px;
+          margin: 0px auto;
+          border-radius: 20px;
+        }
+        @include breakpoint-down(small) {
+          width: 400px;
+          height: 450px;
+          left: -20px;
+          border-radius: 20px;
+        }
+        position: absolute;
+        content: " ";
+        width: 474px;
+        height: 474px;
+        border-radius: 20px;
+        background-color: $bgImage-cont;
+      }
+    }
+
+    .words-div {
+      @include breakpoint-down(medium) {
+        padding: 0px 20px;
+        align-items: center;
+        margin-bottom: 80px;
+      }
+      @include breakpoint-down(small) {
+        padding: 0px;
+      }
+      padding-left: 125px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      gap: 20px 0px;
+      padding-top: 50px;
+      h1 {
+        color: $primary;
+        @include breakpoint-down(medium) {
+          font-size: $fontz-Large;
+        }
+      }
+
+      h3 {
+        font-size: $fontz-Large;
+        @include breakpoint-down(medium) {
+          text-align: center;
+          font-size: $fontz-meduim;
+        }
+
+        @include breakpoint-down(small) {
+          text-align: start;
+          padding-left: 20px;
+        }
+      }
+      p {
+        @include breakpoint-down(medium) {
+          padding: 0px 10px;
+          line-height: 40px;
+          text-align: start;
+        }
+        @include breakpoint-down(small) {
+          padding: 0px;
+          text-align: start;
+          padding-left: 20px;
+        }
+        font-size: $fontz-regular;
+        padding-right: 120px;
+        line-height: 30px;
+      }
+
+      a {
+        margin-top: 30px;
+        text-align: center;
+        width: 157px;
+        padding: 15px 0px;
+        border-radius: 30px;
+        background-color: $primary;
+        color: $textColor4;
+        transition: all 0.3s;
+        &:hover {
+          box-shadow: 0px 0px 10px inset $secondary;
+          transform: scale(1.03);
+        }
+      }
+    }
+  }
+
+  .last-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px 0px;
+    @include breakpoint-down(medium) {
+      padding: 0px;
+      margin: 0px;
+    }
+    .last-top {
+      @include breakpoint-down(medium) {
+        padding: 0px 10px;
+        margin: 0px;
+      }
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px 0px;
+      padding: 0px 180px;
+      h3 {
+        color: $primary;
+        font-size: $fontz-semiLarge;
+        @include breakpoint-down(medium) {
+          font-size: $fontz-Large;
+        }
+        @include breakpoint-down(small) {
+          text-align: start;
+          padding-left: 20px;
+        }
+      }
+      h1 {
+        font-size: $fontz-semiBold;
+        text-align: center;
+        @include breakpoint-down(small) {
+          font-size: $fontz-semiSmall;
+          text-align: start;
+        }
+        @include breakpoint-down(medium) {
+          font-size: $fontz-semiMeduim;
+          text-align: start;
+        }
+      }
+
+      p {
+        text-align: center;
+        font-size: $fontz-regular;
+        padding: 0px 105px;
+        line-height: 25px;
+        @include breakpoint-down(medium) {
+          padding: 0px 0px 0px 60px;
+          margin: 0px;
+          text-align: start;
+        }
+        @include breakpoint-down(small) {
+          padding: 0px;
+          margin: 0px;
+          text-align: start;
+        }
+      }
+    }
+
+    .last-end {
+      padding: 0px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      div {
+        flex: 1 1 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 20px;
+        gap: 20px 0px;
+        background-color: $bgImage-cont;
+        width: calc(100% / 4);
+        border-radius: 20px;
+        height: 235px;
+        width: 348px;
+      }
+      h1 {
+        color: $primary;
+      }
+      span {
+        color: $primary;
+      }
+      p {
+        line-height: 25px;
+      }
+    }
+  }
+}
