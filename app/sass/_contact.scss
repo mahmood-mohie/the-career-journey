@@ -1,0 +1,202 @@
+.contact-main {
+  margin: 40px 170px;
+  @include breakpoint-down(medium) {
+    margin: 40px 20px;
+  }
+
+  .box-info {
+    display: grid;
+    grid-template-areas: "contact form";
+    grid-template-columns: 30% 70%;
+    min-height: 40px;
+    @include breakpoint-down(small) {
+      grid-template-columns: 100%;
+      grid-template-areas:
+        "contact"
+        "form";
+    }
+    .contact-info {
+      @include breakpoint-down(small) {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+      }
+
+      @include breakpoint-down(medium) {
+        width: 100%;
+        padding: 40px 0px 40px 10px;
+        border-radius: 10px;
+      }
+      grid-area: contact;
+      display: flex;
+      flex-direction: column;
+      gap: 30px 0px;
+      background-color: $primary;
+      padding: 40px;
+      border-radius: 20px 0px 0px 20px;
+      .top-info {
+        h2 {
+          color: $textColor4;
+          margin-bottom: 20px;
+          @include breakpoint-down(medium) {
+            font-size: $fontz-regular;
+          }
+        }
+        h3 {
+          color: $textColor4;
+          margin-bottom: 20px;
+          @include breakpoint-down(medium) {
+            font-size: 12px;
+          }
+          font: {
+            weight: 300;
+            size: 15px;
+          }
+        }
+      }
+      .center-info {
+        ul {
+          li {
+            @include breakpoint-down(medium) {
+              font-size: 12px;
+            }
+            margin-bottom: 12px;
+            i {
+              padding: 10px 10px;
+              border-radius: 50%;
+              color: $primary;
+              background-color: $textColor4;
+            }
+            span {
+              font-weight: 500;
+              padding-left: 5px;
+              color: $textColor4;
+            }
+            a {
+              transition: all 0.3s;
+              color: $textColor4;
+              font-weight: 500;
+              &:hover {
+                color: black;
+              }
+            }
+          }
+        }
+      }
+      .last-info {
+        ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0px 20px;
+          li {
+            @include breakpoint-down(medium) {
+              font-size: $fontz-semiSmall;
+            }
+            i {
+              padding: 12px 12px;
+              background-color: white;
+              color: $primary;
+              border-radius: 10px;
+              transition: all 0.3s;
+              &:hover {
+                background-color: black;
+                color: white;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .form-info {
+      @include breakpoint-down(medium) {
+        padding-left: 40px;
+      }
+      @include breakpoint-down(small) {
+        padding-left: 10px;
+      }
+      border-radius: 0px 10px 10px 0px;
+      padding: 40px 0px 40px 100px;
+      grid-area: form;
+      background-color: $bgCards2;
+      form {
+        @include breakpoint-down(medium) {
+          padding-right: 10px;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 40px 0px;
+        h3 {
+          font-size: $fontz-semiLarge;
+          color: $primary;
+        }
+        .div-info {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 20px;
+          input {
+            @include breakpoint-down(medium) {
+              width: 100%;
+            }
+            width: 280px;
+            height: 40px;
+            padding: 7px;
+            border-radius: 15px;
+            border: 1px solid $primary;
+            outline: none;
+            transition: all 0.3s;
+            &:focus {
+              transform: scale(1.05);
+              box-shadow: 0px 0px 5px black;
+              border: none;
+            }
+          }
+
+          textarea {
+            @include breakpoint-down(medium) {
+              width: 100%;
+            }
+            width: 78%;
+            height: 150px;
+            padding: 10px;
+            // border-radius: 20px;
+            border-radius: 30px;
+            border: 1px solid $primary;
+            outline: none;
+            transition: all 0.3s;
+            &:focus {
+              transform: scale(1.01);
+              box-shadow: 0px 0px 5px black;
+              border: none;
+            }
+          }
+        }
+
+        input[type="submit"] {
+          @include breakpoint-down(medium) {
+            width: 100%;
+          }
+          width: 78%;
+          height: 40px;
+          border-radius: 30px;
+          border: none;
+          background-color: $primary;
+          color: $textColor4;
+          font: {
+            size: $fontz-meduim;
+          }
+          transition: all 0.3s;
+          &:hover {
+            background-color: $secondary;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
