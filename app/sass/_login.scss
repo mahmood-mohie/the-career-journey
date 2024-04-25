@@ -1,0 +1,149 @@
+.main-1 {
+  margin: 0px 290px;
+  @include breakpoint-down(medium) {
+    margin: 120px 90px;
+  }
+  @include breakpoint-down(small) {
+    margin: 120px 10px;
+  }
+  .box {
+    box-shadow: 0px 0px 7px black;
+    background-color: $primary;
+    margin-top: 50px;
+    border-radius: 30px;
+    .logIn-div {
+      .buttom-2 {
+        position: relative;
+        background-color: white;
+        border-radius: 20px;
+        width: 198px;
+        height: 47px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0px 20px;
+        a {
+          transform: translateX(5px);
+          padding: 15px 10px;
+          transition: all 0.5s ease-out;
+          position: relative;
+          z-index: 2;
+          color: $secondary;
+          font-weight: 600;
+          &:nth-child(1):hover ~ span {
+            left: 0;
+          }
+          &:nth-child(2):hover ~ span {
+            left: 95px;
+          }
+          &:hover {
+            color: white;
+          }
+        }
+
+        span {
+          transition: all 0.5s;
+          position: absolute;
+          top: 0px;
+          border-radius: 20px;
+          left: 3px;
+          top: 3px;
+          width: 100px;
+          height: 41px;
+          background-color: $primary;
+          z-index: 1;
+        }
+      }
+      border-radius: 40px;
+      min-height: 40px;
+      grid-column: 1/2;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 30px 0px;
+      h1 {
+        font-size: $fontz-Large;
+        color: $textColor4;
+      }
+      h2 {
+        font-size: $fontz-Large;
+        letter-spacing: 2px;
+      }
+      h3 {
+        color: $textColor4;
+        font-size: 23px;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0px 20px;
+        li {
+          transition: all 0.3s ease-out;
+          a {
+            font-size: 15px;
+            padding: 10px 10px;
+            background-color: white;
+            border-radius: 10px;
+            transition: all 0.3s ease-out;
+            color: black;
+            &:hover {
+              background-image: linear-gradient(to top, $secondary, $primary);
+              color: white;
+            }
+          }
+          &:hover {
+            transform: scale(1.1) translateY(-5px);
+          }
+        }
+      }
+
+      form {
+        gap: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        input {
+          @include breakpoint-down(medium) {
+            margin: 0px 120px;
+          }
+          @include breakpoint-down(small) {
+            width: 290px;
+            margin: 0px 20px;
+          }
+          padding: 0px 10px;
+          width: 450px;
+          height: 40px;
+          border-radius: 15px;
+          border: none;
+          outline: none;
+          transition: all 0.2s ease-in;
+          &:focus:not([type="submit"]) {
+            transform: scale(1.01);
+            box-shadow: 0px 0px 7px black;
+          }
+
+          &[type="submit"] {
+            font-size: 20px;
+            font-weight: 500;
+          }
+
+          &:hover[type="submit"] {
+            background-color: $secondary;
+            color: $textColor4;
+            cursor: pointer;
+          }
+        }
+        a {
+          color: black;
+          &:hover {
+            color: $textColor4;
+          }
+        }
+      }
+    }
+  }
+}
