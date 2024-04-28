@@ -149,5 +149,47 @@
         }
       }
     }
+    .buttom-2 {
+      position: relative;
+      background-color: white;
+      border-radius: 20px;
+      width: 198px;
+      height: 47px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0px 20px;
+      a {
+        transform: translateX(5px);
+        padding: 15px 10px;
+        transition: all 0.5s ease-out;
+        position: relative;
+        z-index: 2;
+        color: $secondary;
+        font-weight: 600;
+        &:nth-child(1):hover ~ span {
+          left: 0;
+        }
+        &:nth-child(2):hover ~ span {
+          left: 95px;
+        }
+        &:hover {
+          color: white;
+        }
+      }
+
+      span {
+        transition: all 0.5s;
+        position: absolute;
+        top: 0px;
+        border-radius: 20px;
+        left: 95px;
+        top: 3px;
+        width: 100px;
+        height: 41px;
+        background-color: $primary;
+        z-index: 1;
+      }
+    }
   }
 }
