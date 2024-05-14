@@ -111,6 +111,32 @@ ul {
 
        } 
 }
+// review image 
+.reviewPortrait {
+    height: 75px;
+    width: 150px;
+    display: flex;
+    position: relative;
+    &-left , &-right{
+        width: 50%;
+        border-radius: 50%;
+        height: 100%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+    &-right {
+        position: absolute;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(19, 15, 235, 0.1) 2px 4px 15px 0px;
+        right: 15px;
+    }
+}
 
 // visibility
 .hide-for-mobile {
@@ -120,7 +146,7 @@ ul {
 }
 
 // button 
-button , .button {
+.button {
     font-size: $fontz-semiSmall;
     font-weight: 600;
     // padding: 0.5rem 0.875rem;

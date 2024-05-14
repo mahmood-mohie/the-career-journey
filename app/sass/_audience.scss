@@ -1,0 +1,107 @@
+.audience {
+    &__content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        >h3 {   
+            margin: 0px 20px 40px 0px;
+            @include breakpoint-up(medium) {
+                text-align: center;
+            } 
+        }
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include breakpoint-up(medium) {
+            flex-direction: row;
+        }
+    }
+    &__pros, &__cons {
+        flex: 1 0 40%;
+        // margin: 20px;
+        border-radius: 25px;
+        padding: 30px 20px;
+        @include breakpoint-up(large) {
+            padding: 40px 50px ;
+        }
+        > h6 {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 38px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            margin-bottom: 20px;
+
+            @include breakpoint-up(large) {
+                font-size: 32px;
+                line-height: 42px;
+                color: #20b486;
+                margin-bottom: 40px;
+            }
+        }
+        .mark {
+            display: flex;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+            > svg {
+                flex: 0 0 30px;
+                margin-right: 20px;
+            }
+            > .mark-text {
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 28px;
+                color: rgb(55, 63, 73);
+                > a{
+                    color: #20b486;
+                    text-decoration: underline;
+                    text-decoration-thickness: 1px;
+                    text-underline-offset: .22em;
+                    &:hover {
+                        text-decoration-thickness: 2px;
+                    }
+                }
+                @include breakpoint-up(large) {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+       
+    }
+    &__pros {
+        margin-bottom: 10px;
+        border: 3px solid #20b486;
+    }
+}
+.mark {
+    display: flex;
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    > svg {
+        flex: 0 0 30px;
+        margin-right: 20px;
+    }
+    > .mark-text {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 28px;
+        color: rgb(55, 63, 73);
+        > a{
+            color: #20b486;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: .22em;
+            &:hover {
+                text-decoration-thickness: 2px;
+            }
+        }
+        @include breakpoint-up(large) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
