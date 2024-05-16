@@ -1,7 +1,10 @@
 .academy {
     &__content {
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
+        @include breakpoint-up(medium) {
+            grid-template-columns: repeat(12, 1fr);
+        }
+        grid-template-columns: repeat(10, 1fr);
         column-gap: 30px;
     }
     &-mt {
