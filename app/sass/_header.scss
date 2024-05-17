@@ -2,6 +2,7 @@
     transition: background-color 0.3s, box-shadow 0.3s;
     &.scrolled {
         position: fixed;
+        top: 0;
         right: 0;
         left: 0;
         background-color: white;
