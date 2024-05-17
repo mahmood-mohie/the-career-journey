@@ -121,6 +121,8 @@
       &:hover {
         background-color: $bgCard-hero;
         color: $primary;
+        text-decoration: underline;
+        text-underline-offset: 0.22em;
       }
     }
     .btn-sub2{
@@ -277,7 +279,7 @@
         width: 40%;
         height: 140%;
         top: -20px;
-        animation: 4s rotate linear 2 ; //infinite;
+        animation: 4s rotate linear infinite;
       }
       &::after {
         content: " ";

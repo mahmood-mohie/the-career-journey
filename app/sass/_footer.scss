@@ -10,6 +10,7 @@
         }
     }
     &__logo {
+    
         flex: 1 1 50%;
         margin-bottom: 35px;
         @include breakpoint-up(large) {
@@ -17,7 +18,10 @@
 
         }
         a img {
-            width: 60%;
+            max-width: 100px;
+            @include breakpoint-up(medium) { 
+            max-width:130px;
+        }
         }
     }
     &__links {

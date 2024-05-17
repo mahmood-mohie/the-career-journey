@@ -21,6 +21,16 @@ hamburderMenu.addEventListener("click", function() {
     }
 })
 
+// ---- Make Header Fiexed ------
+document.addEventListener('scroll', function() {
+  if (window.scrollY > 50) {
+    header.classList.add('scrolled');
+} else {
+    header.classList.remove('scrolled');
+}
+});
+
+
 // ---- Testimonial Slider ----
 const slider = document.querySelector(".homeTestimonial__slider");
 const testimonials = document.querySelectorAll(".homeTestimonial__testimonial");

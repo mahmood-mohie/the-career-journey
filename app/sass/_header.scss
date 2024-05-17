@@ -1,5 +1,13 @@
-.header {
-    // border-bottom: 1px solid black;
+.header { 
+    transition: background-color 0.3s, box-shadow 0.3s;
+    &.scrolled {
+        position: fixed;
+        right: 0;
+        left: 0;
+        background-color: white;
+        box-shadow:rgba(0, 0, 0, 0.15) 0px 2px 2px -2px;
+        z-index: 9999;
+    }
     &.open {
         .header__toggle {
             >span {
@@ -22,9 +30,9 @@
         justify-content: space-between;
         align-items: center;
         min-height: 2.75rem; //44px;
-        padding-top: 1.625rem;
+        padding-top: 1rem;
         // padding-top: 0.625rem;
-        padding-bottom: 1.625rem;
+        padding-bottom: 1rem;
         @include breakpoint-up(medium) {
             display: grid;
             grid-template-areas: 
@@ -43,7 +51,7 @@
         grid-area: logo;
         display: flex;
         img {
-            width: 11.25rem; //180px;
+            width: 8.25rem; //180px;
             //change logo size for mobile viewport or replace it with another one
             @include breakpoint-down(small){
                 width: 6.25rem;
@@ -290,7 +298,7 @@
     &__menu {
         position: absolute;
         // top: 50.86px; //55px;
-        top: 4.625rem; //74px
+        top: 4.034375rem; //64.55px
         bottom: 0;
         left: 0;
         right: 0;
