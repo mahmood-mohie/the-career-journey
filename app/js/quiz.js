@@ -16,7 +16,7 @@ function nextQuestion(questionNumber) {
   }
   const nextQuestionNumber = questionNumber + 1;
   if (nextQuestionNumber <= 12) {
-    document.getElementById(`question${nextQuestionNumber}`).style.display = "block";
+    document.getElementById(`question${nextQuestionNumber}`).style.display = "grid";
     document.getElementById(`question${questionNumber}`).style.display = "none";
   } else {
     showResult();
@@ -25,7 +25,7 @@ function nextQuestion(questionNumber) {
 
 function prevQuestion(questionNumber) {
   const prevQuestionNumber = questionNumber - 1;
-  document.getElementById(`question${prevQuestionNumber}`).style.display = "block";
+  document.getElementById(`question${prevQuestionNumber}`).style.display = "grid";
   document.getElementById(`question${questionNumber}`).style.display = "none";
 }
 
@@ -169,8 +169,9 @@ function showResult() {
 
   // Display the result
   const resultContainer = document.getElementById("careerResult");
-  resultContainer.textContent = `Your suggested career path is: ${result}`;
-  resultContainer.style.display = "block";
+  const careerResultContainer = document.getElementById("careerResultContainer");
+  careerResultContainer.style.display = "flex";
+  resultContainer.textContent = `${result}`;
   document.getElementById(`question${12}`).style.display = "none";
 
 

@@ -1,15 +1,175 @@
-/* styles.css */
-.question-container {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
+.quiz {
+  background: linear-gradient(to right, rgb(76, 15, 251) 40%, rgb(155, 249, 255) 38.5%);
+  @include breakpoint-down(medium) {
+    background:linear-gradient(to bottom, rgb(76, 15, 251) 35%, rgb(155, 249, 255) 65%);
   }
+  &__question {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+    padding: 45px 0;
+    @include breakpoint-down(small){
+      grid-template-columns: repeat(8, 1fr);
+      gap: 20px;
+    }
+
+    > .question-text {
+      grid-column: 1 / 5;
+      @include breakpoint-down(medium) {
+        grid-column: 1 / -1;
+
+      }
+      align-self: center;
+      >h2 {
+        font-weight: 700;
+        font-size: 46px;
+        // line-height: 65px;
+        color: rgb(155, 249, 255);
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        @include breakpoint-down(medium) {
+          font-size: 40px;
   
-  .question {
-    margin-top: 50px;
-  }
+        }
+        @include breakpoint-down(small){
+          font-size: 30px;   
+          margin-bottom: 10px;
+          // line-height: initial;
+        }
+        
+       }
+      }
+
+      > .form, form {
+        grid-column: 6 / -1;
+        @include breakpoint-down(medium) {
+          grid-column: 1 / -1;
   
-  .question form {
-    margin-top: 20px;
-  }
+        }
+  
+        > input[type='radio'] {
+            appearance: none; 
+            outline: none;
+            transition: box-shadow 0.3s ease;
+            &:checked + label {
+              background-color: #20b486;
+              color: #ffffff;
+
+            }
+        }
+        > input[type='radio'] + label {
+            display: block;
+            cursor: pointer;
+            box-shadow: rgba(19, 15, 235, 0.1) 1px 2px 20px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 3px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+            color: rgb(0, 0, 0);
+            padding: 15px;
+            &:hover {
+              background-color: #20b486;
+              color: #ffffff;
+            }
+            
+        }
+      }
+    }
+    &__btn {
+      border: 1px solid rgb(255, 255, 255);
+      outline: none;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 999px;
+      height: 46px;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 0px 40px;
+      color: rgb(255, 255, 255);
+      background: transparent;
+      margin: 0 10px 10px 0; //new
+      
+      @include breakpoint-down(medium) {
+        height: 42px;
+        padding: 0px 26px;
+      }    
+      @include breakpoint-down(small){
+        height: 38px;
+        font-size: 14px;
+        padding: 0px 22px;
+      }
+      &:hover {
+        background-color: rgb(155, 249, 255);
+        border-color: rgb(155, 249, 255);
+        box-shadow: unset;
+        color: rgb(76, 15, 251);
+      }
+    }
+    &__careerResult {
+      font-weight: 700;
+      font-size: 50px;
+      // line-height: 65px;
+      color: rgb(155, 249, 255);
+      // text-transform: uppercase;
+      text-align: center;
+      @include breakpoint-down(medium) {
+        font-size: 38px;
+      }    
+      @include breakpoint-down(small){
+        font-size: 22px;
+      }
+    }
+    &__careerResultContainer{
+      justify-content: center;
+      align-items: center;
+      padding: 70px 0;
+        > .result-text {
+          background: #000000f2;
+          border: 2px solid rgb(155, 249, 255);
+          padding: 40px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          @include breakpoint-down(medium) {
+            padding: 30px;
+          }
+          @include breakpoint-down(small){
+            padding: 20px;
+          }
+
+        > h2 {
+          color: rgb(76, 15, 251);
+        }
+        > a {
+          display: block;
+          width: fit-content;
+          text-decoration: underline;
+          cursor: pointer;
+          font-size: 44px;
+          margin-top: 15px;
+          color: rgb(155, 249, 255);
+          text-underline-offset: .22em;
+
+          @include breakpoint-down(medium) {
+            font-size: 36px;
+         
+          }
+          @include breakpoint-down(small){
+            font-size: 20px;
+
+          }
+          
+          &:hover {
+            color: #ffffff;
+            text-decoration-thickness: 2px;
+          }
+        }
+      }
+    }
+    
+  
+}
+
   

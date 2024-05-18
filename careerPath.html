@@ -22,7 +22,7 @@
     <header id="header" class="header">
 
         <nav class="container container--px">
-            <a href="#" class="header__logo">
+            <a href="./index.html" class="header__logo">
                 <!-- The Career Journey -->
                 <img src="./images/header_logo.png" alt="logo">
             </a>
@@ -68,252 +68,357 @@
     
     </header>
     <!-- End Header Section -->
-    <div class="question-container">
-        <div class="question" id="question1">
-            <h2>Question 1</h2>
-            <p>Hey there! What's your main goal?</p>
-            <form>
-              <input type="radio" id="q1a1" name="q1" value="1">
-              <label for="q1a1">Get hired ASAP - I have little to no experience</label><br>
-              <input type="radio" id="q1a2" name="q1" value="2">
-              <label for="q1a2">Get hired ASAP - I have some experience</label><br>
-              <input type="radio" id="q1a3" name="q1" value="3">
-              <label for="q1a3">Upskill and advance my career - already have a job</label><br>
-              <input type="radio" id="q1a4" name="q1" value="4">
-              <label for="q1a4">Freelancer / Start my own business</label><br>
-              <input type="radio" id="q1a5" name="q1" value="5">
-              <label for="q1a5">Make up for not having a Computer Science Degree</label><br>
-              <input type="radio" id="q1a6" name="q1" value="6">
-              <label for="q1a6">I want to become limitless and upgrade my habits</label><br>
-              <button type="button" onclick="nextQuestion(1)">Next</button>
-            </form>
-        </div>
-    
-        <div class="question" id="question2" style="display: none;">
-        <h2>Question 2</h2>
-        <p>Do you have any programming experience?</p>
-        <form>
-            <input type="radio" id="q2a1" name="q2" value="1">
-            <label for="q2a1">JavaScript</label><br>
-            <input type="radio" id="q2a2" name="q2" value="2">
-            <label for="q2a2">Python</label><br>
-            <input type="radio" id="q2a3" name="q2" value="3">
-            <label for="q2a3">Other programming languages (C#, Java, Rust, PHP, C++, or others)</label><br>
-            <input type="radio" id="q2a4" name="q2" value="4">
-            <label for="q2a4">No (or very little experience)</label><br>
-            <button type="button" onclick="prevQuestion(2)">Previous</button>
-            <button type="button" onclick="nextQuestion(2)">Next</button>
-        </form>
-        </div>
-    
-        <div class="question" id="question3" style="display: none;">
-        <h2>Question 3</h2>
-        <p>How much time will you dedicate to learning these new skills?</p>
-        <form>
-            <input type="radio" id="q3a1" name="q3" value="1">
-            <label for="q3a1">1 - 7 hours per week</label><br>
-            <input type="radio" id="q3a2" name="q3" value="2">
-            <label for="q3a2">10 - 25 hours per week</label><br>
-            <input type="radio" id="q3a3" name="q3" value="3">
-            <label for="q3a3">25 - 40 hours per week</label><br>
-            <input type="radio" id="q3a4" name="q3" value="4">
-            <label for="q3a4">Full-time learning. I want to achieve my goal as fast as possible and I am determined to get there.</label><br>
-            <button type="button" onclick="prevQuestion(3)">Previous</button>
-            <button type="button" onclick="nextQuestion(3)">Next</button>
-        </form>
-        </div>
-    
-        <div class="question" id="question4" style="display: none;">
-        <h2>Question 4</h2>
-        <p>What type of projects excite you the most?</p>
-        <form>
-            <input type="radio" id="q4a1" name="q4" value="1">
-            <label for="q4a1">Building websites or web applications</label><br>
-            <input type="radio" id="q4a2" name="q4" value="2">
-            <label for="q4a2">Developing mobile apps</label><br>
-            <input type="radio" id="q4a3" name="q4" value="3">
-            <label for="q4a3">Creating AI models and algorithms</label><br>
-            <input type="radio" id="q4a4" name="q4" value="4">
-            <label for="q4a4">Designing user interfaces and user experiences</label><br>
-            <input type="radio" id="q4a5" name="q4" value="5">
-            <label for="q4a5">Working on backend systems and databases</label><br>
-            <input type="radio" id="q4a6" name="q4" value="6">
-            <label for="q4a6">Ensuring security and ethical hacking</label><br>
-            <button type="button" onclick="prevQuestion(4)">Previous</button>
-            <button type="button" onclick="nextQuestion(4)">Next</button>
-        </form>
-        </div>
-    
-        <div class="question" id="question5" style="display: none;">
-        <h2>Question 5</h2>
-        <p>Which industry do you want to work in?</p>
-        <form>
-            <input type="radio" id="q5a1" name="q5" value="1">
-            <label for="q5a1">Tech startups</label><br>
-            <input type="radio" id="q5a2" name="q5" value="2">
-            <label for="q5a2">Finance and banking</label><br>
-            <input type="radio" id="q5a3" name="q5" value="3">
-            <label for="q5a3">Healthcare</label><br>
-            <input type="radio" id="q5a4" name="q5" value="4">
-            <label for="q5a4">Education</label><br>
-            <input type="radio" id="q5a5" name="q5" value="5">
-            <label for="q5a5">Entertainment and media</label><br>
-            <input type="radio" id="q5a6" name="q5" value="6">
-            <label for="q5a6">Government and public sector</label><br>
-            <button type="button" onclick="prevQuestion(5)">Previous</button>
-            <button type="button" onclick="nextQuestion(5)">Next</button>
-        </form>
-        </div>
-    
-        <div class="question" id="question6" style="display: none;">
-        <h2>Question 6</h2>
-        <p>What is your preferred working style?</p>
-        <form>
-            <input type="radio" id="q6a1" name="q6" value="1">
-            <label for="q6a1">Collaborative team environments</label><br>
-            <input type="radio" id="q6a2" name="q6" value="2">
-            <label for="q6a2">Independent and self-driven projects</label><br>
-            <input type="radio" id="q6a3" name="q6" value="3">
-            <label for="q6a3">A mix of both collaborative and independent work</label><br>
-            <input type="radio" id="q6a4" name="q6" value="4">
-            <label for="q6a4">Remote work</label><br>
-            <input type="radio" id="q6a5" name="q6" value="5">
-            <label for="q6a5">On-site work</label><br>
-            <input type="radio" id="q6a6" name="q6" value="6">
-            <label for="q6a6">Flexible working hours</label><br>
-            <button type="button" onclick="prevQuestion(6)">Previous</button>
-            <button type="button" onclick="nextQuestion(6)">Next</button>
-        </form>
-        </div>
-    
-        <div class="question" id="question7" style="display: none;">
-        <h2>Question 7</h2>
-        <p>How do you prefer to learn new skills?</p>
-        <form>
-            <input type="radio" id="q7a1" name="q7" value="1">
-            <label for="q7a1">Online courses and tutorials</label><br>
-            <input type="radio" id="q7a2" name="q7" value="2">
-            <label for="q7a2">Bootcamps and intensive training programs</label><br>
-            <input type="radio" id="q7a3" name="q7" value="3">
-            <label for="q7a3">Formal academic education (e.g., college degree)</label><br>
-            <input type="radio" id="q7a4" name="q7" value="4">
-            <label for="q7a4">Self-taught using free resources</label><br>
-            <input type="radio" id="q7a5" name="q7" value="5">
-            <label for="q7a5">Mentorship and guided learning</label><br>
-            <input type="radio" id="q7a6" name="q7" value="6">
-            <label for="q7a6">Group study and collaborative learning</label><br>
-            <button type="button" onclick="prevQuestion(7)">Previous</button>
-            <button type="button" onclick="nextQuestion(7)">Next</button>
-        </form>
-        </div>
-    
-        <div class="question" id="question8" style="display: none;">
-        <h2>Question 8</h2>
-        <p>How do you approach problem-solving?</p>
-        <form>
-            <input type="radio" id="q8a1" name="q8" value="1">
-            <label for="q8a1">Analytically, using data and logic</label><br>
-            <input type="radio" id="q8a2" name="q8" value="2">
-            <label for="q8a2">Structured approach with clear steps</label><br>
-            <input type="radio" id="q8a3" name="q8" value="3">
-            <label for="q8a3">Creatively, thinking outside the box</label><br>
-            <input type="radio" id="q8a4" name="q8" value="4">
-            <label for="q8a4">Collaboratively, working with others</label><br>
-            <input type="radio" id="q8a5" name="q8" value="5">
-            <label for="q8a5">Research-oriented, gathering information first</label><br>
-            <input type="radio" id="q8a6" name="q8" value="6">
-            <label for="q8a6">Trial and error, learning by doing</label><br>
-            <button type="button" onclick="prevQuestion(8)">Previous</button>
-            <button type="button" onclick="nextQuestion(8)">Next</button>
-        </form>
-        </div>
-    
-        <div class="question" id="question9" style="display: none;">
-        <h2>Question 9</h2>
-        <p>What motivates you the most in your career?</p>
-        <form>
-            <input type="radio" id="q9a1" name="q9" value="1">
-            <label for="q9a1">High salary and financial rewards</label><br>
-            <input type="radio" id="q9a2" name="q9" value="2">
-            <label for="q9a2">Personal growth and development</label><br>
-            <input type="radio" id="q9a3" name="q9" value="3">
-            <label for="q9a3">Job security and stability</label><br>
-            <input type="radio" id="q9a4" name="q9" value="4">
-            <label for="q9a4">Passion for the field</label><br>
-            <input type="radio" id="q9a5" name="q9" value="5">
-            <label for="q9a5">Helping others and making a difference</label><br>
-            <input type="radio" id="q9a6" name="q9" value="6">
-            <label for="q9a6">Recognition and accolades</label><br>
-            <button type="button" onclick="prevQuestion(9)">Previous</button>
-            <button type="button" onclick="nextQuestion(9)">Next</button>
-        </form>
-        </div>
-    
-        <div class="question" id="question10" style="display: none;">
-        <h2>Question 10</h2>
-        <p>What type of learner are you?</p>
-        <form>
-            <input type="radio" id="q10a1" name="q10" value="1">
-            <label for="q10a1">Eager learner, always looking for new knowledge</label><br>
-            <input type="radio" id="q10a2" name="q10" value="2">
-            <label for="q10a2">Adaptable learner, open to various methods</label><br>
-            <input type="radio" id="q10a3" name="q10" value="3">
-            <label for="q10a3">Cautious learner, prefers a slow and steady pace</label><br>
-            <input type="radio" id="q10a4" name="q10" value="4">
-            <label for="q10a4">Reluctant learner, learns only when necessary</label><br>
-            <input type="radio" id="q10a5" name="q10" value="5">
-            <label for="q10a5">Traditional learner, prefers conventional methods</label><br>
-            <input type="radio" id="q10a6" name="q10" value="6">
-            <label for="q10a6">Situational learner, learns based on context</label><br>
-            <button type="button" onclick="prevQuestion(10)">Previous</button>
-            <button type="button" onclick="nextQuestion(10)">Next</button>
-        </form>
-        </div>
+    <section class="quiz">
+        <div class="quiz__content container container--px">
+            <div class="quiz__question" id="question1">
+                <div class="question-text">
+                    <h2>Hey there! What's your main goal?</h2>
+                    <button class="quiz__btn" type="button" onclick="nextQuestion(1)">Next</button>
 
-        <div class="question" id="question11" style="display: none;">
-        <h2>Question 11</h2>
-        <p>What work-life balance do you prefer?</p>
-        <form>
-            <input type="radio" id="q11a1" name="q11" value="1">
-            <label for="q11a1">Work-life balance with equal focus</label><br>
-            <input type="radio" id="q11a2" name="q11" value="2">
-            <label for="q11a2">Flexible schedule</label><br>
-            <input type="radio" id="q11a3" name="q11" value="3">
-            <label for="q11a3">Balanced integration of work and life</label><br>
-            <input type="radio" id="q11a4" name="q11" value="4">
-            <label for="q11a4">Goal-oriented with a focus on achievements</label><br>
-            <input type="radio" id="q11a5" name="q11" value="5">
-            <label for="q11a5">Traditional 9 to 5 job</label><br>
-            <input type="radio" id="q11a6" name="q11" value="6">
-            <label for="q11a6">Project-based work with deadlines</label><br>
-            <button type="button" onclick="prevQuestion(11)">Previous</button>
-            <button type="button" onclick="nextQuestion(11)">Next</button>
-        </form>
-        </div>
+                </div>
+                <div class="form">
+                  <input type="radio" id="q1a1" name="q1" value="1">
+                  <label for="q1a1">Get hired ASAP - I have little to no experience</label><br>
+                  <input type="radio" id="q1a2" name="q1" value="2">
+                  <label for="q1a2">Get hired ASAP - I have some experience</label><br>
+                  <input type="radio" id="q1a3" name="q1" value="3">
+                  <label for="q1a3">Upskill and advance my career - already have a job</label><br>
+                  <input type="radio" id="q1a4" name="q1" value="4">
+                  <label for="q1a4">Freelancer / Start my own business</label><br>
+                  <input type="radio" id="q1a5" name="q1" value="5">
+                  <label for="q1a5">Make up for not having a Computer Science Degree</label><br>
+                  <input type="radio" id="q1a6" name="q1" value="6">
+                  <label for="q1a6">I want to become limitless and upgrade my habits</label><br>
+                  <!-- <button type="button" onclick="nextQuestion(1)">Next</button> -->
+                </div>
+            </div>
+        
+            <div class="quiz__question" id="question2" style="display: none;">
+                <div class="question-text">
+                    <h2>Do you have any programming experience?</h2>
+                    <button class="quiz__btn" type="button" onclick="prevQuestion(2)">Previous</button>
+                    <button class="quiz__btn" type="button" onclick="nextQuestion(2)">Next</button>
+                </div>
+                <div class="form">
+                    <input type="radio" id="q2a1" name="q2" value="1">
+                    <label for="q2a1">JavaScript</label><br>
+                    <input type="radio" id="q2a2" name="q2" value="2">
+                    <label for="q2a2">Python</label><br>
+                    <input type="radio" id="q2a3" name="q2" value="3">
+                    <label for="q2a3">Other programming languages (C#, Java, Rust, PHP, C++, or others)</label><br>
+                    <input type="radio" id="q2a4" name="q2" value="4">
+                    <label for="q2a4">No (or very little experience)</label><br>
+                   
+                </div>
+            </div>
+        
+            <div class="quiz__question" id="question3" style="display: none;">
+                <div class="question-text">
+                    <h2>How much time will you dedicate to learning these new skills?</h2>
+                    <button class="quiz__btn" type="button" onclick="prevQuestion(3)">Previous</button>
+                    <button class="quiz__btn" type="button" onclick="nextQuestion(3)">Next</button>
+                </div>
+                <div class="form">
+                    <input type="radio" id="q3a1" name="q3" value="1">
+                    <label for="q3a1">1 - 7 hours per week</label><br>
+                    <input type="radio" id="q3a2" name="q3" value="2">
+                    <label for="q3a2">10 - 25 hours per week</label><br>
+                    <input type="radio" id="q3a3" name="q3" value="3">
+                    <label for="q3a3">25 - 40 hours per week</label><br>
+                    <input type="radio" id="q3a4" name="q3" value="4">
+                    <label for="q3a4">Full-time learning. I want to achieve my goal as fast as possible and I am determined to get there.</label><br>
+                    
+                </div>
+            </div>
+        
+            <div class="quiz__question" id="question4" style="display: none;">
+                <div class="question-text">
+                    <h2>What type of projects excite you the most?</h2>
+                    <button class="quiz__btn" type="button" onclick="prevQuestion(4)">Previous</button>
+                    <button class="quiz__btn" type="button" onclick="nextQuestion(4)">Next</button>
+                </div>
+                <div class="form">
+                    <input type="radio" id="q4a1" name="q4" value="1">
+                    <label for="q4a1">Building websites or web applications</label><br>
+                    <input type="radio" id="q4a2" name="q4" value="2">
+                    <label for="q4a2">Developing mobile apps</label><br>
+                    <input type="radio" id="q4a3" name="q4" value="3">
+                    <label for="q4a3">Creating AI models and algorithms</label><br>
+                    <input type="radio" id="q4a4" name="q4" value="4">
+                    <label for="q4a4">Designing user interfaces and user experiences</label><br>
+                    <input type="radio" id="q4a5" name="q4" value="5">
+                    <label for="q4a5">Working on backend systems and databases</label><br>
+                    <input type="radio" id="q4a6" name="q4" value="6">
+                    <label for="q4a6">Ensuring security and ethical hacking</label><br>
+                    
+                </div>
+            </div>
+        
+            <div class="quiz__question" id="question5" style="display: none;">
+                <div class="question-text">
+                    <h2>Which industry do you want to work in?</h2>
+                    <button class="quiz__btn" type="button" onclick="prevQuestion(5)">Previous</button>
+                    <button class="quiz__btn" type="button" onclick="nextQuestion(5)">Next</button>
+                </div>
+                <div class="form">
+                    <input type="radio" id="q5a1" name="q5" value="1">
+                    <label for="q5a1">Tech startups</label><br>
+                    <input type="radio" id="q5a2" name="q5" value="2">
+                    <label for="q5a2">Finance and banking</label><br>
+                    <input type="radio" id="q5a3" name="q5" value="3">
+                    <label for="q5a3">Healthcare</label><br>
+                    <input type="radio" id="q5a4" name="q5" value="4">
+                    <label for="q5a4">Education</label><br>
+                    <input type="radio" id="q5a5" name="q5" value="5">
+                    <label for="q5a5">Entertainment and media</label><br>
+                    <input type="radio" id="q5a6" name="q5" value="6">
+                    <label for="q5a6">Government and public sector</label><br>
+                   
+                </div>
+            </div>
+        
+            <div class="quiz__question" id="question6" style="display: none;">
+                <div class="question-text">
+                    <h2>What is your preferred working style?</h2>
+                    <button class="quiz__btn" type="button" onclick="prevQuestion(6)">Previous</button>
+                    <button class="quiz__btn" type="button" onclick="nextQuestion(6)">Next</button>
+                </div>
+                <div class="form">
+                    <input type="radio" id="q6a1" name="q6" value="1">
+                    <label for="q6a1">Collaborative team environments</label><br>
+                    <input type="radio" id="q6a2" name="q6" value="2">
+                    <label for="q6a2">Independent and self-driven projects</label><br>
+                    <input type="radio" id="q6a3" name="q6" value="3">
+                    <label for="q6a3">A mix of both collaborative and independent work</label><br>
+                    <input type="radio" id="q6a4" name="q6" value="4">
+                    <label for="q6a4">Remote work</label><br>
+                    <input type="radio" id="q6a5" name="q6" value="5">
+                    <label for="q6a5">On-site work</label><br>
+                    <input type="radio" id="q6a6" name="q6" value="6">
+                    <label for="q6a6">Flexible working hours</label><br>
+                    
+                </div>
+            </div>
+        
+            <div class="quiz__question" id="question7" style="display: none;">
+                <div class="question-text">
+                    <h2>How do you prefer to learn new skills?</h2>
+                    <button class="quiz__btn" type="button" onclick="prevQuestion(7)">Previous</button>
+                    <button class="quiz__btn" type="button" onclick="nextQuestion(7)">Next</button>
+                </div>
+                <div class="form">
+                    <input type="radio" id="q7a1" name="q7" value="1">
+                    <label for="q7a1">Online courses and tutorials</label><br>
+                    <input type="radio" id="q7a2" name="q7" value="2">
+                    <label for="q7a2">Bootcamps and intensive training programs</label><br>
+                    <input type="radio" id="q7a3" name="q7" value="3">
+                    <label for="q7a3">Formal academic education (e.g., college degree)</label><br>
+                    <input type="radio" id="q7a4" name="q7" value="4">
+                    <label for="q7a4">Self-taught using free resources</label><br>
+                    <input type="radio" id="q7a5" name="q7" value="5">
+                    <label for="q7a5">Mentorship and guided learning</label><br>
+                    <input type="radio" id="q7a6" name="q7" value="6">
+                    <label for="q7a6">Group study and collaborative learning</label><br>
+                    
+                </div>
+            </div>
+        
+            <div class="quiz__question" id="question8" style="display: none;">
+                <div class="question-text">
+                    <h2>How do you approach problem-solving?</h2>
+                    <button class="quiz__btn" type="button" onclick="prevQuestion(8)">Previous</button>
+                    <button class="quiz__btn" type="button" onclick="nextQuestion(8)">Next</button>
+                </div>
+                <div class="form">
+                    <input type="radio" id="q8a1" name="q8" value="1">
+                    <label for="q8a1">Analytically, using data and logic</label><br>
+                    <input type="radio" id="q8a2" name="q8" value="2">
+                    <label for="q8a2">Structured approach with clear steps</label><br>
+                    <input type="radio" id="q8a3" name="q8" value="3">
+                    <label for="q8a3">Creatively, thinking outside the box</label><br>
+                    <input type="radio" id="q8a4" name="q8" value="4">
+                    <label for="q8a4">Collaboratively, working with others</label><br>
+                    <input type="radio" id="q8a5" name="q8" value="5">
+                    <label for="q8a5">Research-oriented, gathering information first</label><br>
+                    <input type="radio" id="q8a6" name="q8" value="6">
+                    <label for="q8a6">Trial and error, learning by doing</label><br>
+                    
+                </div>
+            </div>
+        
+            <div class="quiz__question" id="question9" style="display: none;">
+                <div class="question-text">
+                    <h2>What motivates you the most in your career?</h2>
+                    <button class="quiz__btn" type="button" onclick="prevQuestion(9)">Previous</button>
+                    <button class="quiz__btn" type="button" onclick="nextQuestion(9)">Next</button>
+                </div>
+                <div class="form">
+                    <input type="radio" id="q9a1" name="q9" value="1">
+                    <label for="q9a1">High salary and financial rewards</label><br>
+                    <input type="radio" id="q9a2" name="q9" value="2">
+                    <label for="q9a2">Personal growth and development</label><br>
+                    <input type="radio" id="q9a3" name="q9" value="3">
+                    <label for="q9a3">Job security and stability</label><br>
+                    <input type="radio" id="q9a4" name="q9" value="4">
+                    <label for="q9a4">Passion for the field</label><br>
+                    <input type="radio" id="q9a5" name="q9" value="5">
+                    <label for="q9a5">Helping others and making a difference</label><br>
+                    <input type="radio" id="q9a6" name="q9" value="6">
+                    <label for="q9a6">Recognition and accolades</label><br>
+                    
+                </div>
+            </div>
+        
+            <div class="quiz__question" id="question10" style="display: none;">
+                <div class="question-text">
+                    <h2>What type of learner are you?</h2>
+                    <button class="quiz__btn" type="button" onclick="prevQuestion(10)">Previous</button>
+                    <button class="quiz__btn" type="button" onclick="nextQuestion(10)">Next</button>
+                </div>
+                <div class="form">
+                    <input type="radio" id="q10a1" name="q10" value="1">
+                    <label for="q10a1">Eager learner, always looking for new knowledge</label><br>
+                    <input type="radio" id="q10a2" name="q10" value="2">
+                    <label for="q10a2">Adaptable learner, open to various methods</label><br>
+                    <input type="radio" id="q10a3" name="q10" value="3">
+                    <label for="q10a3">Cautious learner, prefers a slow and steady pace</label><br>
+                    <input type="radio" id="q10a4" name="q10" value="4">
+                    <label for="q10a4">Reluctant learner, learns only when necessary</label><br>
+                    <input type="radio" id="q10a5" name="q10" value="5">
+                    <label for="q10a5">Traditional learner, prefers conventional methods</label><br>
+                    <input type="radio" id="q10a6" name="q10" value="6">
+                    <label for="q10a6">Situational learner, learns based on context</label><br>
+                    
+                </div>
+            </div>
     
-        <div class="question" id="question12" style="display: none;">
-        <h2>Question 12</h2>
-        <p>Which work environment do you thrive in?</p>
-        <form>
-            <input type="radio" id="q12a1" name="q12" value="1">
-            <label for="q12a1">Web development environment</label><br>
-            <input type="radio" id="q12a2" name="q12" value="2">
-            <label for="q12a2">Mobile development environment</label><br>
-            <input type="radio" id="q12a3" name="q12" value="3">
-            <label for="q12a3">Data science environment</label><br>
-            <input type="radio" id="q12a4" name="q12" value="4">
-            <label for="q12a4">Design and creativity environment</label><br>
-            <input type="radio" id="q12a5" name="q12" value="5">
-            <label for="q12a5">Backend development and server management environment</label><br>
-            <input type="radio" id="q12a6" name="q12" value="6">
-            <label for="q12a6">Security and ethical hacking environment</label><br>
-            <button type="button" onclick="prevQuestion(12)">Previous</button>
-            <button type="button" onclick="showResult()">Show Result</button>
-        </form>
+            <div class="quiz__question" id="question11" style="display: none;">
+                <div class="question-text">
+                    <h2>What work-life balance do you prefer?</h2>
+                    <button class="quiz__btn" type="button" onclick="prevQuestion(11)">Previous</button>
+                    <button class="quiz__btn" type="button" onclick="nextQuestion(11)">Next</button>
+                </div>
+                <div class="form">
+                    <input type="radio" id="q11a1" name="q11" value="1">
+                    <label for="q11a1">Work-life balance with equal focus</label><br>
+                    <input type="radio" id="q11a2" name="q11" value="2">
+                    <label for="q11a2">Flexible schedule</label><br>
+                    <input type="radio" id="q11a3" name="q11" value="3">
+                    <label for="q11a3">Balanced integration of work and life</label><br>
+                    <input type="radio" id="q11a4" name="q11" value="4">
+                    <label for="q11a4">Goal-oriented with a focus on achievements</label><br>
+                    <input type="radio" id="q11a5" name="q11" value="5">
+                    <label for="q11a5">Traditional 9 to 5 job</label><br>
+                    <input type="radio" id="q11a6" name="q11" value="6">
+                    <label for="q11a6">Project-based work with deadlines</label><br>
+                    
+                </div>
+            </div>
+        
+            <div class="quiz__question" id="question12" style="display: none;">
+                <div class="question-text">
+                    <h2>Which work environment do you thrive in?</h2>
+                    <button class="quiz__btn" type="button" onclick="prevQuestion(12)">Previous</button>
+                    <button class="quiz__btn" type="button" onclick="showResult()">Show Result</button>
+                </div>
+                <div class="form">
+                    <input type="radio" id="q12a1" name="q12" value="1">
+                    <label for="q12a1">Web development environment</label><br>
+                    <input type="radio" id="q12a2" name="q12" value="2">
+                    <label for="q12a2">Mobile development environment</label><br>
+                    <input type="radio" id="q12a3" name="q12" value="3">
+                    <label for="q12a3">Data science environment</label><br>
+                    <input type="radio" id="q12a4" name="q12" value="4">
+                    <label for="q12a4">Design and creativity environment</label><br>
+                    <input type="radio" id="q12a5" name="q12" value="5">
+                    <label for="q12a5">Backend development and server management environment</label><br>
+                    <input type="radio" id="q12a6" name="q12" value="6">
+                    <label for="q12a6">Security and ethical hacking environment</label><br>
+                    
+                </div>
+            </div>
+    
+            <div class="quiz__careerResultContainer" id="careerResultContainer" style="display:none;">
+                <div class="result-text">
+                    <h2 class="quiz__careerResult">Your suggested career path is: </h2>
+                    <a class="quiz__careerResult" id="careerResult"></a>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div id="careerResult" style="display:none;">
-    </div>
+     <!-- Start Footer  -->
+     <footer class="footer">
+        <div class="container container--px">
+          <div class="footer__sectionOne">
+            <div class="footer__logo">
+              <a href="#">
+                <img src="./images/footer_logo.png" alt="logo">
+              </a>
+            </div>
+            <div class="footer__links">
+              <div class="footer__links-col">
+                <span>Quick Links</span>
+                <a href="#">Home</a>
+                <a href="#">Pricing</a>
+                <a href="#">Testimonials</a>
+                <a href="#">Blog</a>
+                <a href="#">Cheat Sheets</a>
+                <a href="#">Newsletters</a>
+                <a href="#">Community</a>
+              </div>
+              <div class="footer__links-col">
+                <span>The Academy</span>
+                <a href="#">Courses</a>
+                <a href="#">Career Paths</a>
+                <a href="#">Workshops & More</a>
+                <a href="#">Career Path Quiz</a>
+                <a href="#">Free Resources</a>
+              </div>
+              <div class="footer__links-col">
+                <span>Company</span>
+                <a href="#">About TCJ</a>
+                <a href="#">Swag Store</a>
+                <a href="#">Ambassadors</a>
+                <a href="#">Contact Us</a>
+              </div>
+              
+            </div>
+          </div>
+          <div class="footer__sectionTwo">
+            <div class="footer__socialMedia">
+              <a href="#">
+                <svg tabindex="-1" width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M8.5 0.249454C3.80375 0.249454 0 4.05533 0 8.74946C0 12.5057 2.43525 15.6911 5.81187 16.8138C6.23687 16.8939 6.39271 16.6311 6.39271 16.4051C6.39271 16.2032 6.38562 15.6685 6.38208 14.9601C4.01767 15.473 3.519 13.8197 3.519 13.8197C3.13225 12.8387 2.57337 12.5766 2.57337 12.5766C1.80342 12.0496 2.63287 12.0602 2.63287 12.0602C3.48642 12.1197 3.93479 12.9357 3.93479 12.9357C4.69271 14.2355 5.9245 13.8601 6.41042 13.6426C6.48692 13.093 6.70579 12.7182 6.94875 12.5057C5.06104 12.2932 3.077 11.5622 3.077 8.30533C3.077 7.37741 3.40637 6.6195 3.95179 6.0245C3.85617 5.80987 3.56929 4.94571 4.02617 3.77483C4.02617 3.77483 4.73804 3.54675 6.36367 4.64608C7.04367 4.45696 7.76617 4.36346 8.48867 4.35921C9.21117 4.36346 9.93367 4.45696 10.6137 4.64608C12.2287 3.54675 12.9405 3.77483 12.9405 3.77483C13.3974 4.94571 13.1105 5.80987 13.0255 6.0245C13.5674 6.6195 13.8968 7.37741 13.8968 8.30533C13.8968 11.5707 11.9099 12.2897 10.0187 12.4987C10.3162 12.7537 10.5924 13.275 10.5924 14.0712C10.5924 15.2087 10.5818 16.1225 10.5818 16.3987C10.5818 16.6219 10.7305 16.8875 11.1662 16.8025C14.5669 15.6876 17 12.5001 17 8.74946C17 4.05533 13.1941 0.249454 8.5 0.249454Z"></path></svg>
+              </a>
+              <a href="#">
+                <svg tabindex="-1" width="1200" height="1227" viewBox="0 0 1200 1227" fill="none"><path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"></path></svg>
+              </a>
+              <a href="#">
+                <svg tabindex="-1" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.0393 15.1768H12.0777V10.5103C12.0777 9.39747 12.0552 7.96541 10.5343 7.96541C8.99018 7.96541 8.75435 9.17625 8.75435 10.4281V15.1768H5.79268V5.5806H8.63768V6.88864H8.67602C9.07351 6.13448 10.0402 5.33843 11.4843 5.33843C14.4852 5.33843 15.0402 7.32438 15.0402 9.90946L15.0393 15.1768ZM2.44768 4.26753C1.49435 4.26753 0.728516 3.49159 0.728516 2.53716C0.728516 1.58357 1.49518 0.808464 2.44768 0.808464C3.39768 0.808464 4.16768 1.58357 4.16768 2.53716C4.16768 3.49159 3.39685 4.26753 2.44768 4.26753ZM3.93268 15.1768H0.962682V5.5806H3.93268V15.1768Z"></path></svg>
+              </a>
+              <a href="#">
+                <svg tabindex="-1" width="17" height="17" viewBox="0 0 17 17" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 8.49985C17 3.80515 13.1942 -0.000652313 8.49952 -0.000652313C3.80482 -0.000652313 -0.000976562 3.80515 -0.000976562 8.49985C-0.000976562 12.7427 3.10753 16.2594 7.17132 16.8971V10.957H5.01299V8.49985H7.17132V6.62708C7.17132 4.49664 8.44038 3.31985 10.3821 3.31985C11.3121 3.31985 12.2849 3.48588 12.2849 3.48588V5.5778H11.213C10.157 5.5778 9.82772 6.23305 9.82772 6.90529V8.49985H12.1853L11.8084 10.957H9.82772V16.8971C13.8915 16.2594 17 12.7427 17 8.49985Z"></path></svg>
+              </a>
+              <a href="#">
+                <svg tabindex="-1" width="17" height="17" viewBox="0 0 17 17"><mask id="mask0" maskUnits="userSpaceOnUse" x="0" y="0" width="17" height="17" style="mask-type: alpha;"><path d="M0 0.00512695H16.9946V16.9977H0V0.00512695Z"></path></mask><g mask="url(#mask0)"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.49733 0.00512695C6.18959 0.00512695 5.90021 0.0149087 4.99388 0.0562619C4.08944 0.0975139 3.47174 0.241171 2.93125 0.451242C2.37248 0.668363 1.8986 0.958915 1.42618 1.43131C0.953788 1.90373 0.663236 2.37761 0.446115 2.93638C0.236044 3.47687 0.0923869 4.09457 0.0511349 4.99901C0.00978175 5.90534 0 6.19471 0 8.50246C0 10.8102 0.00978175 11.0996 0.0511349 12.0059C0.0923869 12.9103 0.236044 13.528 0.446115 14.0685C0.663236 14.6273 0.953788 15.1012 1.42618 15.5736C1.8986 16.046 2.37248 16.3365 2.93125 16.5537C3.47174 16.7637 4.08944 16.9074 4.99388 16.9486C5.90021 16.99 6.18959 16.9998 8.49733 16.9998C10.8051 16.9998 11.0944 16.99 12.0008 16.9486C12.9052 16.9074 13.5229 16.7637 14.0634 16.5537C14.6222 16.3365 15.096 16.046 15.5685 15.5736C16.0408 15.1012 16.3314 14.6273 16.5486 14.0685C16.7586 13.528 16.9022 12.9103 16.9435 12.0059C16.9849 11.0996 16.9946 10.8102 16.9946 8.50246C16.9946 6.19471 16.9849 5.90534 16.9435 4.99901C16.9022 4.09457 16.7586 3.47687 16.5486 2.93638C16.3314 2.37761 16.0408 1.90373 15.5685 1.43131C15.096 0.958915 14.6222 0.668363 14.0634 0.451242C13.5229 0.241171 12.9052 0.0975139 12.0008 0.0562619C11.0944 0.0149087 10.8051 0.00512695 8.49733 0.00512695ZM8.49733 1.53617C10.7662 1.53617 11.035 1.54484 11.931 1.58572C12.7594 1.6235 13.2094 1.76193 13.5088 1.8783C13.9054 2.03244 14.1885 2.21658 14.4858 2.51394C14.7832 2.81127 14.9673 3.09434 15.1215 3.49097C15.2378 3.79039 15.3763 4.24032 15.414 5.0688C15.4549 5.96481 15.4636 6.23357 15.4636 8.50246C15.4636 10.7713 15.4549 11.0401 15.414 11.9361C15.3763 12.7646 15.2378 13.2145 15.1215 13.5139C14.9673 13.9106 14.7832 14.1936 14.4858 14.4909C14.1885 14.7883 13.9054 14.9724 13.5088 15.1266C13.2094 15.243 12.7594 15.3814 11.931 15.4192C11.0351 15.4601 10.7664 15.4687 8.49733 15.4687C6.22827 15.4687 5.95958 15.4601 5.06367 15.4192C4.23519 15.3814 3.78527 15.243 3.48584 15.1266C3.08921 14.9724 2.80615 14.7883 2.50882 14.4909C2.21148 14.1936 2.02732 13.9106 1.87317 13.5139C1.7568 13.2145 1.61837 12.7646 1.5806 11.9361C1.53971 11.0401 1.53105 10.7713 1.53105 8.50246C1.53105 6.23357 1.53971 5.96481 1.5806 5.0688C1.61837 4.24032 1.7568 3.79039 1.87317 3.49097C2.02732 3.09434 2.21145 2.81127 2.50882 2.51394C2.80615 2.21658 3.08921 2.03244 3.48584 1.8783C3.78527 1.76193 4.23519 1.6235 5.06367 1.58572C5.95968 1.54484 6.22844 1.53617 8.49733 1.53617Z"></path></g><path fill-rule="evenodd" clip-rule="evenodd" d="M8.49729 11.3353C6.93295 11.3353 5.66483 10.0672 5.66483 8.50291C5.66483 6.93857 6.93295 5.67045 8.49729 5.67045C10.0616 5.67045 11.3297 6.93857 11.3297 8.50291C11.3297 10.0672 10.0616 11.3353 8.49729 11.3353ZM8.49729 4.1394C6.08737 4.1394 4.13379 6.09299 4.13379 8.50291C4.13379 10.9128 6.08737 12.8664 8.49729 12.8664C10.9072 12.8664 12.8608 10.9128 12.8608 8.50291C12.8608 6.09299 10.9072 4.1394 8.49729 4.1394Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.053 3.96672C14.053 4.52988 13.5965 4.98638 13.0333 4.98638C12.4702 4.98638 12.0137 4.52988 12.0137 3.96672C12.0137 3.40356 12.4702 2.94702 13.0333 2.94702C13.5965 2.94702 14.053 3.40356 14.053 3.96672Z"></path></svg>
+              </a>
+              <a href="#">
+                <svg tabindex="-1" width="17" height="12" viewBox="0 0 17 12" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.1418 0.357579C15.8733 0.554335 16.4492 1.13407 16.6447 1.87029C17 3.2046 17 5.98864 17 5.98864C17 5.98864 17 8.77258 16.6447 10.1071C16.4492 10.8432 15.8733 11.4229 15.1418 11.6198C13.8161 11.9773 8.5 11.9773 8.5 11.9773C8.5 11.9773 3.18393 11.9773 1.85822 11.6198C1.12683 11.4229 0.550761 10.8432 0.355261 10.1071C0 8.77258 0 5.98864 0 5.98864C0 5.98864 0 3.2046 0.355261 1.87029C0.550761 1.13407 1.12683 0.554335 1.85822 0.357579C3.18393 0 8.5 0 8.5 0C8.5 0 13.8161 0 15.1418 0.357579ZM11.2045 5.98872L6.76132 8.51631V3.46094L11.2045 5.98872Z"></path></svg>
+              </a>
+            </div>
+            <div class="footer__copyright">
+              <div>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Cookies</a>
+              </div>
+              <p>Copyright © 2024, The Career Journey Inc.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer  -->
+      
     <script src="./app/js/header.js"></script>
     <script src="./app/js/quiz.js"></script>
 </body>
